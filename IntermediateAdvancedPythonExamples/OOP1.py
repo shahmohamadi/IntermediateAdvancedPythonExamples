@@ -23,7 +23,6 @@ class Person:
     def return_count(self):
         return Person.count
 
-
 samane = Person('samane', 31)
 samane.get_name()
 samane.get_age()
