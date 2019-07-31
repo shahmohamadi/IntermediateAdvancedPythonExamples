@@ -11,6 +11,12 @@ sex = 'm'
 
 cursor = cnx.cursor()
 cursor.execute('INSERT INTO people VALUES ("%s", %i, "%s")' % (name, age, sex))
-
 cnx.commit()
+
+query = 'SELECT * FROM people;'
+cursor.execute(query)
+
+for(name, age, sex) in cursor:
+    print('%s age is %i and is a %s' % (name, age, sex))
+
 cnx.close()
