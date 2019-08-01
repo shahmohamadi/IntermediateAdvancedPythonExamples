@@ -17,6 +17,13 @@ val1 = val[1]
 # print(val1.attrs)
 result = soup.find_all('h3', attrs={'class': 'title'})
 print(result)
+# print(result[2].text)
+count = 0
+for h3 in result:
+    print(result[count].text)
+    count += 1
+
+
 
 
 
