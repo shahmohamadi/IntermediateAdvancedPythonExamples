@@ -16,12 +16,16 @@ val1 = val[1]
 # print(val1)
 # print(val1.attrs)
 result = soup.find_all('h3', attrs={'class': 'title'})
-print(result)
+# print(result)
 # print(result[2].text)
+workshops = []
 count = 0
 for h3 in result:
-    print(result[count].text)
+    workshops.append(result[count].text.strip())
+    if len(workshops[count]) > 15:
+        print(workshops[count])
     count += 1
+
 
 
 
