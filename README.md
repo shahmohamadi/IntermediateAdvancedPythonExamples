@@ -2,6 +2,7 @@
 
 Here are some intermediate to advanced examples in Python:
 
+
 Lambda functions, map/filter
 
 Generator Functions
