@@ -19,6 +19,5 @@ result = soup.find_all('h3', attrs={'class': 'title'})
 # print(result)
 # print(result[2].text)
 all_workshops = [x.text.strip() for x in result]
-# workshops = [workshop for workshop in all_workshops if workshop.len() > 15]
-workshops = [workshop for workshop in all_workshops if len(workshop) > 15]
+workshops = [workshop for workshop in all_workshops if workshop.__len__() > 15]
 print(*workshops, sep="\n")
