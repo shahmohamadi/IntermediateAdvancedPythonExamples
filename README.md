@@ -2,4 +2,16 @@
 
 Here are some intermediate to advanced examples in Python:
 
-lambda functions, map/filter
+Lambda functions, map/filter
+
+Generator Functions
+
+Machine Learning 
+
+Object oriented programming
+
+Regex
+
+Web Scraping
+
+API
